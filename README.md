@@ -17,12 +17,12 @@ The financial planner leverages Python 3.8+ and utilizes the following project l
 * [Pandas](https://pandas.pydata.org/) - a software library designed for open source data analysis and manipulation
 - [matplotlib](https://matplotlib.org/) - library for creating visualizations in Python
 - [alpaca_trade_api](https://alpaca.markets/data) - SDK used to interact with Alpaca API for stock trading
-- MCForecastTools
-- pathlib
+- MCForecastTools - Monte Carlo simulation tools .py file
 - os - functions for interacting with the operating system
 - requests - library to access data via APIs
 - json - library that converts data from an API into a human-readable format
 - dotenv
+
 
 
 ---
@@ -200,7 +200,7 @@ MC_thirty_year = MCSimulation(
 
 - Finally, generate summary statistics and using this information, calculate the lower and upper bounds for the expected value of the portfolio with a 95% confidence interval.
 
-- Repeat the steps to analyze different scenarios for the portfolio. In this analysis, the Monte Carlo simulation is re-run for a ten year forecast and a heavier emphasis on stocks of 80%. The following images show the resulting overlay plot and histogram plot.
+- Repeat the steps to analyze different scenarios for the portfolio. In this analysis, the Monte Carlo simulation is repeated for a ten year forecast with a heavier emphasis on stocks of 80%. The following images show the resulting overlay plot and histogram plot.
 ![JupyterLab notebook ten year simulation plot](Images/MC_tenyear_sim_plot.png)
 ![JupyterLab notebook ten year distribution plot](Images/MC_tenyear_dist_plot.png)
 
