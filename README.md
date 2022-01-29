@@ -193,16 +193,16 @@ MC_thirty_year = MCSimulation(
 
 - The following image shows the overlay line plot resulting from a simulation with these characteristics. 
 
-![JupyterLab notebook daily returns](images/MC_thirtyyear_sim_plot.PNG)
+![JupyterLab notebook thirty year simulation plot](images/MC_thirtyyear_sim_plot.PNG)
 
 - Plot the probability distribution of the Monte Carlo simulation. The following image shows the histogram plot resulting from a simulation with these characteristics. 
-![JupyterLab notebook cumulative returns](images/MC_thirty_year_dist_plot.PNG)
+![JupyterLab notebook thirty year distribution plot](images/MC_thirty_year_dist_plot.PNG)
 
 - Finally, generate summary statistics and using this information, calculate the lower and upper bounds for the expected value of the portfolio with a 95% confidence interval.
 
 - Repeat the steps to analyze different scenarios for the portfolio. In this analysis, the Monte Carlo simulation is re-run for a ten year forecast and a heavier emphasis on stocks of 80%. The following images show the resulting overlay plot and histogram plot.
-![JupyterLab notebook box plot S&P 500 and funds](images/MC_tenyear_sim_plot.PNG)
-![JupyterLab notebook box plot funds only](images/MC_tenyear_dist_plot.PNG)
+![JupyterLab notebook ten year simulation plot](images/MC_tenyear_sim_plot.PNG)
+![JupyterLab notebook ten year distribution plot](images/MC_tenyear_dist_plot.PNG)
 
 
 RETIREMENT ANALYSIS:
