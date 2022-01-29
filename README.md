@@ -93,7 +93,7 @@ Before making any API calls, create a new .txt file to store your alpaca_api_key
 
 Rename the text file to '.env'. The file will disappear from the left-hand side menu, however, the file is hidden and still exists. (Note: This is to protect your keys. Never disclose your API keys to a public site and when using GitHub, use environment variables to protect your private API credentials.)
 
-![JupyterLab notebook env file](Images/env_file.PNG)
+![JupyterLab notebook env file](Images/env_file.png)
 
 In the financial planner, the Requests library will be used to get the current price of Bitcoin (BTC) and Ethereum (ETH). The endpoint URLs for the respective cryptocurrencies are listed below.  
 
@@ -193,16 +193,16 @@ MC_thirty_year = MCSimulation(
 
 - The following image shows the overlay line plot resulting from a simulation with these characteristics. 
 
-![JupyterLab notebook thirty year simulation plot](Images/MC_thirtyyear_sim_plot.PNG)
+![JupyterLab notebook thirty year simulation plot](Images/MC_thirtyyear_sim_plot.png)
 
 - Plot the probability distribution of the Monte Carlo simulation. The following image shows the histogram plot resulting from a simulation with these characteristics. 
-![JupyterLab notebook thirty year distribution plot](Images/MC_thirty_year_dist_plot.PNG)
+![JupyterLab notebook thirty year distribution plot](Images/MC_thirty_year_dist_plot.png)
 
 - Finally, generate summary statistics and using this information, calculate the lower and upper bounds for the expected value of the portfolio with a 95% confidence interval.
 
 - Repeat the steps to analyze different scenarios for the portfolio. In this analysis, the Monte Carlo simulation is re-run for a ten year forecast and a heavier emphasis on stocks of 80%. The following images show the resulting overlay plot and histogram plot.
-![JupyterLab notebook ten year simulation plot](Images/MC_tenyear_sim_plot.PNG)
-![JupyterLab notebook ten year distribution plot](Images/MC_tenyear_dist_plot.PNG)
+![JupyterLab notebook ten year simulation plot](Images/MC_tenyear_sim_plot.png)
+![JupyterLab notebook ten year distribution plot](Images/MC_tenyear_dist_plot.png)
 
 
 RETIREMENT ANALYSIS:
