@@ -76,12 +76,12 @@ An instance of the JupyterLab user interface automatically opens in your browser
 
 Navigate to **'Run'** on the menu bar and select **'Run All Cells'** from the drop-down menu. Otherwise, run each individual cell with ctrl+enter.
 
-![JupyterLab browser running all cells](images/run_kernels.PNG)
+![JupyterLab browser running all cells](Images/run_kernels.PNG)
 
 
 If running each cell individually, first run the cell to import the required libraries and dependencies: 
 
-![JupyterLab notebook import cell](images/import_cell.PNG)
+![JupyterLab notebook import cell](Images/import_cell.PNG)
 
 
 ### **Step 1: Import the data**
@@ -89,11 +89,11 @@ Before using, it is required to load market data. In this analysis market data i
 
 Before making any API calls, create a new .txt file to store your alpaca_api_key and alpaca_secret_key. Enter your keys using the following format: 
 
-![JupyterLab notebook alpaca api key](images/alpaca_key.PNG)
+![JupyterLab notebook alpaca api key](Images/alpaca_key.PNG)
 
 Rename the text file to '.env'. The file will disappear from the left-hand side menu, however, the file is hidden and still exists. (Note: This is to protect your keys. Never disclose your API keys to a public site and when using GitHub, use environment variables to protect your private API credentials.)
 
-![JupyterLab notebook env file](images/env_file.PNG)
+![JupyterLab notebook env file](Images/env_file.PNG)
 
 In the financial planner, the Requests library will be used to get the current price of Bitcoin (BTC) and Ethereum (ETH). The endpoint URLs for the respective cryptocurrencies are listed below.  
 
@@ -113,7 +113,7 @@ print(json.dumps(<insert response variable here>, indent=4, sort_keys=True))
 ```
 The resulting data should appear as follows:
 
-![JupyterLab notebook ETH json dump](images/eth_json_dump.PNG)
+![JupyterLab notebook ETH json dump](Images/eth_json_dump.PNG)
 
 Next, an API call will be made to Alpaca via the Alpaca SDK to get the current closing prices of the SPDR S&P 500 ETF Trust (ticker: SPY) and of the iShares Core US Aggregate Bond ETF (ticker: AGG).
 
@@ -145,14 +145,14 @@ To confirm the data was imported properly, use the head and/or tail function to 
 
 `display(df.tail())`
 
-![JupyterLab notebook load data](images/collect_data.PNG)
+![JupyterLab notebook load data](Images/collect_data.PNG)
 
 ### **Step 2: Evaluate Emergency Savings**
 In this section, you’ll use the valuations for the cryptocurrency wallet and for the stock and bond portions of the portfolio to determine if the credit union member has enough savings to build an emergency fund into their financial plan. To do this, complete the following steps:
 
 - Create a Python list named savings_data that has two elements: (1)  total value of the cryptocurrency wallet and (2) total value of the stock and bond portions of the portfolio. Plot a pie chart that visualizes the composition of the member's portfolio.
 
-![JupyterLab notebook portfolio composition](images/pie_chart.PNG)
+![JupyterLab notebook portfolio composition](Images/pie_chart.PNG)
 
 - Create a variable named emergency_fund_value, and set it equal to three times the value of the member’s monthly_income of $12000.
 - Create a series of three if statements to determine if the member’s total portfolio is large enough to fund the emergency portfolio.
@@ -193,16 +193,16 @@ MC_thirty_year = MCSimulation(
 
 - The following image shows the overlay line plot resulting from a simulation with these characteristics. 
 
-![JupyterLab notebook thirty year simulation plot](images/MC_thirtyyear_sim_plot.PNG)
+![JupyterLab notebook thirty year simulation plot](Images/MC_thirtyyear_sim_plot.PNG)
 
 - Plot the probability distribution of the Monte Carlo simulation. The following image shows the histogram plot resulting from a simulation with these characteristics. 
-![JupyterLab notebook thirty year distribution plot](images/MC_thirty_year_dist_plot.PNG)
+![JupyterLab notebook thirty year distribution plot](Images/MC_thirty_year_dist_plot.PNG)
 
 - Finally, generate summary statistics and using this information, calculate the lower and upper bounds for the expected value of the portfolio with a 95% confidence interval.
 
 - Repeat the steps to analyze different scenarios for the portfolio. In this analysis, the Monte Carlo simulation is re-run for a ten year forecast and a heavier emphasis on stocks of 80%. The following images show the resulting overlay plot and histogram plot.
-![JupyterLab notebook ten year simulation plot](images/MC_tenyear_sim_plot.PNG)
-![JupyterLab notebook ten year distribution plot](images/MC_tenyear_dist_plot.PNG)
+![JupyterLab notebook ten year simulation plot](Images/MC_tenyear_sim_plot.PNG)
+![JupyterLab notebook ten year distribution plot](Images/MC_tenyear_dist_plot.PNG)
 
 
 RETIREMENT ANALYSIS:
@@ -214,8 +214,8 @@ Between the thirty year and ten year scenario, the thirty year portfolio is a be
 ### **Quit instructions:**
 After saving the file, from the menu bar, navigate to **'File'**, select **'Shutdown'** from the drop-down menu and confirm Shut Down.
 
-![JupyterLab browser selecting shutdown](images/jupyter_shutdown.PNG)
-![JupyterLab browser confirming shutdown](images/shutdown_confirm.PNG)
+![JupyterLab browser selecting shutdown](Images/jupyter_shutdown.PNG)
+![JupyterLab browser confirming shutdown](Images/shutdown_confirm.PNG)
 
 In your open terminal window, deactivate the dev environment by typing:
 ```python
